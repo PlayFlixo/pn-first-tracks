@@ -1,0 +1,636 @@
+<div>
+<h3>‎ </h3>
+<h>‎ </h3>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Library</title>
+  <style>
+    body {
+      background-color: #2c3e50;
+      font-family: 'Lexend Bold', sans-serif;
+      color: #f5f5f5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .game {
+  text-align: center;
+  padding: 1%;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #34495e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(12.5% - 12px);
+  text-decoration: none; /* Remove underline from the link */
+  color: #f5f5f5; /* Set text color for the link */
+  display: block; /* Make the entire box clickable */
+  transition: transform 0.3s ease; /* Hover animation */
+}
+
+.game img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+.game h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Hover Animation */
+.game:hover {
+  transform: scale(1.1);
+}
+
+/* Move the top game down by 8% */
+.game:first-child {
+  margin-top: 6%;
+}
+
+/* Move the first 6 games down by 8% */
+.game:nth-child(-n+11) {
+  margin-top: 6%;
+}
+  </style>
+</head>
+<body>
+
+  
+<a class="game" onclick="openGame('https://betterbull.com/uploads/5/5/6/7/5567194/custom_themes/811766381464516446/files/index.html')">
+  <img src="https://img.gamepix.com/games/18-wheeler-driving-sim/icon/18-wheeler-driving-sim.png">
+  <h3>18 Wheeler</h3>
+</a>
+
+  <a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/get@0f07946b63206a3989fb430901740f041cd34922/main.xml')">
+  <img src="https://img.utdstc.com/icon/983/22a/98322a3b2be892eed31589906ffd949b68bcccc9a21ba562987965b5ec6bc6de:200">
+  <h3>1v1.LOL</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@ba67db72ab9cb950075563e759ca4a25a2c30609/build/2048cup/2048c.xml')">
+  <img src="https://play-lh.googleusercontent.com/TeQcfN2P0v_9WUxZm_8TC6dA5nlzUUcykCEyZlSWO8GS9G-jTy8wbnZo2K3oChh-d1o">
+  <h3>2048 Cupcake</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://35902478-644598845814386463.preview.editmysite.com/uploads/b/147685986-949430254192321787/files/2l.xml')">
+  <img src="https://files.kidsearch.games/game/4f7/384/4f7384ed0873af91/images/240/2048legend.jpg">
+  <h3>2048 Legend</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/IoC-framework@b78b024024e74cc2ff64074beaace5045d805d56/ProjectSettings/2048-m.xml')">
+  <img src="https://cdn6.aptoide.com/imgs/5/3/4/53400ed95eddaaa97915fbfacc4cb3fc_icon.png">
+  <h3>2048 Multiplayer</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@560c65d6d599514642c9a1638e082c91bd40d194/Hooks/2048s.xml')">
+  <img src="https://play-lh.googleusercontent.com/Pk0U008L7CtPBmA9oSZbY0N55ZR6uV-lk9n5U4S7-77TfXsAYIN6L69kLbT6gtHaEpE">
+  <h3>2048 Shoot</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://27247109-865546796419095595.preview.editmysite.com/uploads/b/147918137-431030130285004662/files/2x2l.xml')">
+  <img src="https://plays.org/wp-content/uploads/2048-x2-legend.png">
+  <h3>2048 X2 Legends</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F4th-and-goal-2014.xml')">
+  <img src="https://raw.githubusercontent.com/PlayFlixo/playflixo/main/Images/4%26G%20'14.png">
+  <h3>4th and Goal 2014</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F4th-and-goal-2015.xml')">
+  <img src="https://github.com/PlayFlixo/playflixo/blob/main/Images/4&G%20'15.png?raw=true">
+  <h3>4th and Goal 2015</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F4th-and-goal2016.xml')">
+  <img src="https://github.com/PlayFlixo/playflixo/blob/main/Images/4&G%20'16.png?raw=true">
+  <h3>4th and Goal 2016</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F4th-and-goal-2018.xml')">
+  <img src="https://github.com/PlayFlixo/playflixo/blob/main/Images/4&G%20'18.png?raw=true">
+  <h3>4th and Goal 2018</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://284711640-164027483921740274.preview.editmysite.com/uploads/b/139890129-601329693740539694/files/4g22.xml')">
+  <img src="https://github.com/PlayFlixo/playflixo/blob/main/Images/4&G%20'22.png?raw=true">
+  <h3>4th and Goal 2022</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2F7-days-without-rain.xml')">
+  <img src="https://files.gamezhero.com/game/32d/a4d/32da4d627cedebcb/images/240/7dayswithoutrain.jpg">
+  <h3>7 Days Without Rain</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F8-ball-pool.xml')">
+  <img src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag">
+  <h3>8 Ball Pool</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fadam-and-eve.xml')">
+  <img src="https://assets.funnygames.org/1/13551/66545/1024x1024/adam-and-eve.webp">
+  <h3>Adam and Eve</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fadam-and-eve-2.xml')">
+  <img src="https://assets.funnygames.org/4/22944/76972/1024x1024/adam-and-eve-2.webp">
+  <h3>Adam and Eve 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fadam-and-eve-3.xml')">
+  <img src="https://assets.funnygames.org/9/115319/101261/1024x1024/adam-and-eve-go-3.webp">
+  <h3>Adam and Eve 3</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@ba92ad3b1a5df6a4dae03987b78c5474e2c0d185/build/aio/agio.xml')">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Agar.io_App_Store.png">
+  <h3>Agar.io</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fage-of-defense.xml')">
+  <img src="https://o.qoo-img.com/storage.qoo-img.com/game/8464/T5YJ1YSevsQCt4c797TLtpKGzN5dMpWA.jpg">
+  <h3>Age of Defense</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fage-of-defense-3.xml')">
+  <img src="https://o.qoo-img.com/storage.qoo-img.com/game/8464/T5YJ1YSevsQCt4c797TLtpKGzN5dMpWA.jpg">
+  <h3>Age of Defense 3</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fage-of-defense-4.xml')">
+  <img src="https://o.qoo-img.com/storage.qoo-img.com/game/8464/T5YJ1YSevsQCt4c797TLtpKGzN5dMpWA.jpg">
+  <h3>Age of Defense 4</h3>
+</a>
+
+  <a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@bb8f4595bd538d662c055a6e8effa1c8ce9e0a5e/ObjectExplorer/Ahoy.xml')">
+  <img src="https://store-images.s-microsoft.com/image/apps.18406.14584547355089597.8e074302-549e-4a87-9f00-e8e549597bf1.e441481e-d83c-4f49-a4f9-ba8c99b1c7be?h=464">
+  <h3>Ahoy</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fairport-madness-3.xml')">
+  <img src="https://a.silvergames.com/j/b/airport-madness-3.jpg">
+  <h3>Airport Madness 3</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gahaden/ags@a17bbae7f756eae92fbe0d28f2812f7f42687c1b/au.xml')">
+  <img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec">
+  <h3>Among Us</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@30e7601c53b57634d2288fd993d8baaeae060eb2/CSConsole/Lexers/ab.xml')">
+  <img src="https://seeklogo.com/images/A/angry-birds-logo-EB37C31E45-seeklogo.com.png">
+  <h3>Angry Birds</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fapple-shooter.xml')">
+  <img src="https://play-lh.googleusercontent.com/Q_Ux9rCwP-2_iMU8ijsIdPX4oY2CG4fIzF0JxCtQTFZPPxTBwGhAOPRGtN7dBN0QVsj6=w240-h480-rw">
+  <h3>Apple Shooter</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fapple-shooter-champ.xml')">
+  <img src="https://www5.minijuegosgratis.com/v3/games/thumbnails/215461_7_sq.jpg">
+  <h3>Apple Shooter Champ</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fawesome-planes.xml')">
+  <img src="https://kizicdn.com/system/static/thumbs/big_tile_thumb/892/thumb300_300_300.jpg?1556200758">
+  <h3>Awesome Planes</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fbad-piggies.xml')">
+  <img src="https://www.angrybirdsnest.com/wp-content/uploads/2014/01/BadPiggiesHD_artworkUrl512.png">
+  <h3>Bad Piggies</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/Meteor@c010df63e91ad28084114c53c8335cad6f063232/examples/react-in-blaze/br2.xml')">
+  <img src="https://img.gamepix.com/games/bank-robbery-2/icon/bank-robbery-2.png">
+  <h3>Bank Robbery 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fbartender_the_right_mix.xml')">
+  <img src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon_thumb/93819e80e5e3693840fa1f2c327b51b5.png">
+  <h3>The Right Mix</h3>
+</a>
+
+<a class="game" onclick="openGame('https://lookinthe.net/')">
+  <img src="https://kevin.games/assets/images/new/basketbros-io.jpg">
+  <h3>Basket Bros</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@c0c9f32fd575688ff4b14309e9acf19b73f15e2a/build/bs/bs.xml')">
+  <img src="https://img.gamepix.com/games/basketball-stars/icon/basketball-stars.png">
+  <h3>Basketball Stars</h3>
+</a>
+
+<a class="game" onclick="openGame('https://dreamonstudios.com/bb2web/')">
+  <img src="https://play-lh.googleusercontent.com/EjJV6kCXgX9EIhKEtpYhQF8-BUb5En8sDKpOPiWSQJUxv9_RAfl4tMxyIMkQYgeqC6I=w240-h480-rw">
+  <h3>Basketball Stars 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://183662057-183305820582754925.preview.editmysite.com/uploads/b/139890129-258428596653956378/files/btts2.xml')">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8Kgp2Sl78djzTJNUlex2X_BuLwdQWv42xA&usqp=CAU">
+  <h3>BTTS 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml')">
+  <img src="https://d.newsweek.com/en/full/1317374/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg?w=1600&h=1600&q=88&f=75befc746fb83a0c568c44ca07bc5e64">
+  <h3>BitLife</h3>
+</a>
+
+<a class="game" onclick="openGame('https://blackrocket.com/launchpad/wp-content/themes/blackrocket/battleroyale-game/')">
+  <img src="https://raw.githubusercontent.com/PlayFlixo/playflixo/main/Images/Black%20Rocket%20Battle%20Royale%20Icon.png">
+  <h3>Black Rocket BR</h3>
+</a>
+  
+  <a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://216496035-137502748155036295.preview.editmysite.com/uploads/b/147669997-467471537607099690/files/btp.xml')">
+  <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/9fec1234ce2afd5e789f56da463dcffc.jpeg">
+  <h3>Block the Pig</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons_tower_defense.xml')">
+  <img src="https://play-lh.googleusercontent.com/LeZ9qnLV9Sc8dM0nzQrKPoEsrOiT5mpEYFIs91ztvcq3NWZNJBA2e0U7UsG4WNRxyeA">
+  <h3>Bloons TD</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons_tower_defense_2.xml')">
+  <img src="https://games.lol/wp-content/uploads/2022/02/bloons-td-battles-2-on-pc.jpg">
+  <h3>Bloons TD 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons-td-3.xml')">
+  <img src="https://a.silvergames.com/j/b/bloons-tower-defense-3.jpg">
+  <h3>Bloons TD 3</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons-tower-defense-4.xml')">
+  <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/hzxdx2vq8jfmkuht7n30.jpg">
+  <h3>Bloons TD 4</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fbloxors.xml')">
+  <img src="https://play-lh.googleusercontent.com/FZ0qdNb8S1h4iJ4X0pBviJbH7odiOB06BRa-hmrjGfq0S5CAvs8suU-FZllXNVbUZgtm=w240-h480-rw">
+  <h3>Bloxorz</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fbob-the-robber.xml')">
+  <img src="https://img.gamedistribution.com/18d28481ea514f3c838f9a5a355fb0f7-512x512.jpeg">
+  <h3>Bob the Robber</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fbob-the-robber-2.xml')">
+  <img src="https://gameforge.com/de-DE/littlegames/includes/images/games/9468_5eb3ef7732ef0.jpg">
+  <h3>Bob the Robber 2</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bessiegasbarro/boudu@bec01d4f84079769f0959274a5d7b4eea4cdb6bf/bd.xml')">
+  <img src="https://play-lh.googleusercontent.com/Zhx4lZuyDsNkGktp2fjyHpUB1yMb3VNNAIW-Lrcdr7b_fbrjxoc87-9VFhLKcGqGERw=w240-h480-rw">
+  <h3>Bouncy Dude</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbullet-bill-3.xml')">
+  <img src="https://evilgames.eu/img/flash/og-bullet-bill-3.png">
+  <h3>Bullet Bill 3</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fbusiness-simulator.xml')">
+  <img src="https://play-lh.googleusercontent.com/jgT0qbfTPyjqsydTYAZDq2RWSv4D2lcQNH513zykVW1tYAiDZyIqyQxUvrnM384m17g=w240-h480-rw">
+  <h3>Business Simulator</h3>
+</a>
+
+<a class="game" onclick="openGame('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fcall-of-duty.xml')">
+  <img src="https://cdn6.aptoide.com/imgs/8/e/0/8e0cd8552270598d066043b5c037718e_icon.png">
+  <h3>Call of Duty</h3>
+</a>
+
+<a class="game" onclick="openGame('')">
+  <img src="https://play-lh.googleusercontent.com/1btzRy3IwWiPif85v6FbsDLuCW6XjMLXz8MOtucDHi0Yit0xbigmrEbKMDQEi0EI6_8=w240-h480-rw">
+  <h3>Car Drawing</h3>
+</a>
+
+<a class="game" onclick="openGame('')">
+  <img src="https://slitherio.online/upload/imgs/cleanupio.jpg">
+  <h3>Cleanup.io</h3>
+</a>
+
+<a class="game" onclick="openGame('')">
+  <img src="https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0f3310bb5781e76be74c837c95608a3f.png">
+  <h3>Clicker Heroes</h3>
+</a>
+
+<a class="game" onclick="openGame('')">
+  <img src="https://img.gamepix.com/games/climb-over-it/icon/climb-over-it.png">
+  <h3>Climb Over It</h3>
+</a>
+
+<a class="game" onclick="openGame('')">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e6/63/46/e6634693-2901-f1dd-9889-f628ac1285df/AppIcon-1x_U007emarketing-0-9-0-85-220.png/512x512bb.jpg">
+  <h3>Connect Four</h3>
+</a>
+
+
+  <a class="game" onclick="openGame('')">
+  <img src="">
+  <h3></h3>
+</a>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif') center center fixed no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #toggleButton {
+            position: fixed;
+            bottom: 3px;
+            right: 3px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton" onclick="toggleBackground()">Toggle Background</button>
+
+    <script>
+        let isBackgroundToggled = false;
+
+        function toggleBackground() {
+            const body = document.body;
+
+            if (isBackgroundToggled) {
+                body.style.background = 'url("https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif") center center fixed no-repeat';
+                body.style.backgroundSize = 'cover';
+            } else {
+                body.style.background = '#000000';
+            }
+
+            isBackgroundToggled = !isBackgroundToggled;
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flixo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5em;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 5px 30px; /* Increased padding for width */
+            position: relative; /* Added position relative */
+        }
+
+        .nav-link:before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 3px solid #f5f5f5; /* Green outline for the gray box */
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .nav-link:hover {
+            transform: scale(0.95);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            z-index: 1;
+            transform: translateY(100%) scale(0.95);
+            transition: transform 0.3s ease;
+            padding: 10px;
+            opacity: 0;
+        }
+
+        .dropdown.open .dropdown-content {
+            display: block;
+            transform: translateY(0%) scale(0.8);
+            opacity: 1;
+        }
+
+        .dropdown-option {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+            margin-left: -35px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .dropdown .arrow-down {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="/gs.html" class="nav-link">Games</a>
+        <a href="/tv.html" class="nav-link">TV</a>
+        <a href="/mov.html" class="nav-link">Movies</a>
+        <a href="/pr.html" class="nav-link">Proxies</a>
+        <a href="/in.html" class="nav-link">Info</a>
+        </div>
+        <div class="dropdown">
+            <a class="nav-link">Cloak Tab<span class="arrow-down"></span></a>
+            <div class="dropdown-content">
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://www.google.com/favicon.ico', 'Google')">Google</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png', 'Google Drive')">Google Drive</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://raw.githubusercontent.com/PlayFlixo/playflixo/main/Assets/google-doc-favicon.png', 'Google Docs')">Google Docs</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://assets-global.website-files.com/5d6db64572061db9c481aaeb/60182f5c9e9d2a1f6fead710_classlink-icon-symbol-large.png', 'Wildcat Launchpad')">ClassLink</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://i0.wp.com/www.mpslakers.com/wp-content/uploads/2020/01/schoology-logo.png?fit=511%2C511&ssl=1', 'Home | Schoology')">Schoology</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1667482730/drk12org/idrzgqs3vcg2upruomdg/ic.png', 'Infinite Campus')">Infinite Campus</a>
+                <a href="#" class="nav-link dropdown-option" onclick="changeFaviconAndTitle('https://assets.clever.com/resource-icons/apps/5fd279ea0ab69b00013f8036/icon_60043f6.png', 'SmartPass')">SmartPass</a>
+            </div>
+        </div>
+    </header>
+  
+    <script>
+        function changeFaviconAndTitle(faviconUrl, title) {
+            // Change favicon
+            var favicon = document.querySelector('link[rel="icon"]');
+            favicon.href = faviconUrl;
+
+            // Change tab title
+            document.title = title;
+        }
+
+        var dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(function(dropdown) {
+            dropdown.addEventListener('click', function() {
+                dropdown.classList.toggle('open');
+            });
+        });
+    </script>
+<script type='text/javascript'  src="https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/089d1bfdb4e54328a59574fb7ac4e473b32134ed9982a399929388d97e08f2dd/loader.js?fn=inject.js"></script><script type='text/javascript'  src="https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/089d1bfdb4e54328a59574fb7ac4e473b32134ed9982a399929388d97e08f2dd/loader.js?fn=inject.js"></script><script type='text/javascript'  src="https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/089d1bfdb4e54328a59574fb7ac4e473b32134ed9982a399929388d97e08f2dd/loader.js?fn=inject.js"></script></body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif') center center fixed no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #toggleButton {
+            position: fixed;
+            bottom: 3px;
+            right: 3px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton" onclick="toggleBackground()">Toggle Background</button>
+
+    <script>
+        let isBackgroundToggled = false;
+
+        function toggleBackground() {
+            const body = document.body;
+
+            if (isBackgroundToggled) {
+                body.style.background = 'url("https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif") center center fixed no-repeat';
+                body.style.backgroundSize = 'cover';
+            } else {
+                body.style.background = '#000000';
+            }
+
+            isBackgroundToggled = !isBackgroundToggled;
+        }
+    </script>
+
+<script>
+    function openGame(url) {
+        var win;
+
+        if (url) {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.scrolling="no"
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+
+                var interval = setInterval(function() {
+                    if (win.closed) {
+                        clearInterval(interval);
+                        win = undefined;
+                    }
+                }, 500);
+            }
+        }
+    }
+</script>
+</body>
+</html>
