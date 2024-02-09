@@ -1,0 +1,119 @@
+<div>
+<h3>‎ </h3>
+<h>‎ </h3>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Library</title>
+  <style>
+    body {
+      background-color: #1d1f25;
+      font-family: 'Lexend Bold', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+.game {
+  text-align: center;
+  padding: 1%;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #40474f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(12.5% - 12px);
+  text-decoration: none;
+  color: #fafafa;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.game img {
+  border-radius: 12px;
+  width: 100%; /* Make the image fill the container horizontally */
+  height: auto; /* Allow the height to adjust proportionally */
+  max-height: 200px; /* Set a maximum height to limit the size */
+}
+
+
+.game h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Hover Animation */
+.game:hover {
+  transform: scale(1.1);
+}
+
+/* Move the top game down by 8% */
+.game:first-child {
+  margin-top: 6%;
+}
+
+/* Move the first 6 games down by 8% */
+.game:nth-child(-n+11) {
+  margin-top: 6%;
+}
+  </style>
+</head>
+<body>
+
+  
+<a class="game" onclick="openGame('https://kq2zhs-8080.csb.app/web/_aHR0cHM6Ly93d3cubmV0ZmxpeC5jb20=_/')">
+  <img src="https://www.pngall.com/wp-content/uploads/13/Netflix-Logo-PNG.png">
+  <h3>Netflix</h3>
+</a>
+                
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+    function openGame(url) {
+        var win;
+
+        if (url) {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.scrolling="no"
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+
+                var interval = setInterval(function() {
+                    if (win.closed) {
+                        clearInterval(interval);
+                        win = undefined;
+                    }
+                }, 500);
+            }
+        }
+    }
+</script>
+</body>
+</html>
