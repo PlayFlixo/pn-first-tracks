@@ -65,6 +65,15 @@
         a:hover::after {
             transform: scaleX(1); /* Scale the line to its full width on hover */
         }
+                .vertical-line {
+            position: absolute;
+            top: 0;
+            right: 33.33%; /* Position the line 33.33% from the right side */
+            height: 100%;
+            width: 2px; /* Set the width of the line */
+            background-color: #029b4b; /* Color of the line */
+            z-index: 999; /* Ensure the line is above other content */
+        }
         .homepage {
             height: 100vh;
             display: flex;
@@ -121,6 +130,7 @@
         <p>Bug fixes deployed.</p>
         <p>Upcoming maintenance scheduled.</p>
     </div>
+    <div class="vertical-line"></div>
 </div>
 
 </body>
