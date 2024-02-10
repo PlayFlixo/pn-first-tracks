@@ -1,6 +1,3 @@
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9494126940648215"
-     crossorigin="anonymous"></script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +65,7 @@
         a:hover::after {
             transform: scaleX(1); /* Scale the line to its full width on hover */
         }
-            .vertical-line {
+        .vertical-line {
             position: absolute;
             bottom: 0;
             right: 33.33%; /* Position the line 33.33% from the right side */
@@ -112,7 +109,7 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-            .horizontal-line {
+        .horizontal-line {
             position: absolute;
             bottom: 45.5%; /* Position the line 45.5% from the bottom */
             right: 0; /* Position the line 33.33% from the right side */
@@ -121,6 +118,45 @@
             background-color: #026286; /* Color of the line */
             z-index: 999; /* Ensure the line is above other content */
         }
+    .bottom-right-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 3.33%; /* Adjusted to 3.33% from the right */
+        left: 69.6666%; /* Adjusted to 69.6666% from the left */
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .bottom-right-buttons button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        color: #000;
+        border: 2px solid #026286;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .bottom-right-buttons button:hover {
+        background-color: #026286;
+        color: white;
+        animation: buttonScale 0.3s ease forwards;
+    }
+
+    @keyframes buttonScale {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
     </style>
 </head>
 <body>
@@ -144,6 +180,12 @@
     </div>
     <div class="vertical-line"></div>
     <div class="horizontal-line"></div>
+    <div class="bottom-right-buttons">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+    </div>
 </div>
 
 </body>
