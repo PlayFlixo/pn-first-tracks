@@ -238,3 +238,55 @@ nav a:hover::after {
     transform: scaleX(1); /* Scale the line to its full width on hover */
 }
 
+body {
+  background-color: #1d1f25;
+  font-family: 'Lexend Bold', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  text-align: center;
+  padding: 1%;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #40474f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(12.5% - 12px);
+  text-decoration: none;
+  color: #fafafa;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.game img {
+  border-radius: 12px;
+  width: 100%; /* Make the image fill the container horizontally */
+  height: auto; /* Allow the height to adjust proportionally */
+  max-height: 200px; /* Set a maximum height to limit the size */
+}
+
+.game h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Hover Animation */
+.game:hover {
+  transform: scale(1.1);
+}
+
+/* Move the top game down by 8% */
+.game:first-child {
+  margin-top: 6%;
+}
+
+/* Move the first 6 games down by 8% */
+.game:nth-child(-n+11) {
+  margin-top: 6%;
+}
